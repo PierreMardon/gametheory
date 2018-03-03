@@ -83,6 +83,12 @@ x2	-AllIn	-Call
 Fold
 </pre>
 
+- `NLPerBetTurnBetTreeAbstractor` that has a much more compact syntax. It's not really satisfying, it would need better heuristics (taking example from other softwares).
+  - The atomic actions have the same syntax as `NLFormalBetTreeAbstractor`
+  - All players can always call
+  - A contrario, all-in moves are not implicit
+  - For each street, you declare successive *active* actions (bet or raise) on one line like this `x2 - x3 - Push | x3 - x4 - Push` meaning for the preflop : the first active action can either be `x2 bb`, `x3 bb` or `all-in`, and after that, if valid the second active action can be `x3 of previous raise`, `x4 of previous raise` or `all-in`.
+
 #### gameutil.poker.he.clustering
 
 - `HoldemOpponentClusterHandStrength` : class to build histograms of hand strength versus opponent clustered hole cards (OCHS) as [shown here](http://poker.cs.ualberta.ca/publications/AAMAS13-abstraction.pdf)
