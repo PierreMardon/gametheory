@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>net.funkyjava.gametheory</groupId>
+		<artifactId>gametheory</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+	</parent>
+	<artifactId>gameutil</artifactId>
+	<name>gameutil</name>
+	<packaging>pom</packaging>
+	<url>http://maven.apache.org</url>
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
+	<modules>
+		<module>gameutil.cards</module>
+		<module>gameutil.clustering</module>
+		<module>gameutil.poker.bets</module>
+		<module>gameutil.poker.he.clustering</module>
+		<module>gameutil.poker.he.evaluators</module>
+		<module>gameutil.poker.he.handeval</module>
+		<module>gameutil.poker.he.handeval.twoplustwo</module>
+		<module>gameutil.poker.he.indexing.djhemlig</module>
+		<module>gameutil.poker.he.indexing.waugh</module>
+	</modules>
+</project>
